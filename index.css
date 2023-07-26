@@ -1,0 +1,309 @@
+*{
+
+    margin: 0;
+    padding: 0;
+   font-family: 'Baloo Bhai', cursive;
+    box-sizing: border-box;
+  
+}
+
+.container{
+
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    'navbar navbar navbar navbar'
+    'section section section section'
+    'aside aside aside aside'
+    'footer footer footer footer'
+    
+    
+    ;
+}
+.logo{
+
+    height: 400px;
+    width:100%;
+}
+.left{
+
+    display: inline-block;
+    position: absolute;
+    top: 9px;
+    left: 34px;
+    
+    }
+    .left img{
+    
+        width:100px ;
+       
+    }
+    .left div{
+    
+       text-align: center;
+       font-size: 15px;
+    }
+    .mid{
+    
+        display: block;
+        width: 50%;
+        margin:28px  auto;
+       
+        position: absolute;
+        top: 13px;
+        right: 383px;
+      
+    }
+    .right{
+    
+     
+        display: inline-block;
+        position: absolute;
+        top: 31px;
+        right: 34px;
+    }
+    
+    .navbar2{
+        display: inline-block;
+    }
+    .navbar2 li{
+        display: inline-block;
+        font-size: 20px;
+        font-weight: bold;
+    
+        
+        
+    }
+    .navbar2 li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 36px;
+       
+    }
+    
+    .navbar2 li a:hover,.navbar li a:active {
+       
+       text-decoration: underline;
+       color: black;
+       text-shadow: 2px 2px 2px whitesmoke;
+       
+    }
+    .btn{
+    
+        margin:0px 9px ;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        font-family: 'Baloo Bhai', cursive;
+        
+    }
+    .btn:hover{
+    box-shadow: 3px 3px 3px white;
+    
+    }
+    .text{
+        position: absolute;
+        top: 192px;
+        right: 432px;
+        text-align: center;
+        color: white;
+      
+    }
+    .text button {
+      
+       width:120px;
+       height:35px;
+       border-radius: 5px;
+       margin: 15px 5px;
+       background-color: gray;
+       color: black;
+    }
+    .text button:hover {
+     box-shadow: 2px 2px 2px whitesmoke;
+     }
+   
+
+    h2{
+text-align: center;
+    }
+
+     .flexbox {
+        position : relative;
+        width : 1100px;
+        display : flex;
+        justify-content : space-between;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding : 10px;  
+        left: 150px;
+      }
+      
+      .flexbox .card {
+        position: relative;
+        max-width : 300px;
+        height : 200px;  
+        background-color : #fff;
+        margin : 40px 10px;
+        padding : 20px 15px;
+        
+        display : flex;
+        flex-direction : column;
+        box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+        transition : 0.3s ease-in-out;
+        border-radius : 15px;
+      }
+      .flexbox .card:hover {
+        height : 320px;    
+      }
+      
+      
+      .flexbox .card .image {
+        position : relative;
+        width : 260px;
+        height : 260px;
+        
+        top : -40%;
+        left: 8px;
+        box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+        z-index : 1;
+      }
+      
+      .flexbox .card .image img {
+        max-width : 100%;
+        border-radius : 15px;
+      }
+      
+      .flexbox .card .content {
+        position : relative;
+        top : -140px;
+        padding : 10px 15px;
+        color : #111;
+        text-align : center;
+        
+        visibility : hidden;
+        opacity : 0;
+        transition : 0.3s ease-in-out;
+          
+      }
+      
+      .flexbox .card:hover .content {
+         margin-top : 30px;
+         visibility : visible;
+         opacity : 1;
+         transition-delay: 0.2s;
+        
+      }
+      .flexing{
+        display: flex;
+        justify-content: center;
+      
+      }
+      
+ 
+      .flexing img{
+
+        height:100px;
+        width:200px;
+      }
+nav{
+
+    grid-area: navbar;
+}
+  section{
+    background-color: lightgrey;
+    border: 2px solid black;
+    border-radius: 5px;
+    grid-area: section;
+  } 
+
+  aside{
+    
+    border: 5px solid whitesmoke;
+    padding: 10px 45px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    grid-area: aside;
+  } 
+  footer{
+
+    grid-area: footer;
+  }
+  .fot img{
+
+    width: 65%;
+    height: 500px;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 34px 200px;
+   
+  }
+  .txt{
+    color: white;
+  }
+
+  @media only screen and (max-width:300px) {
+    
+    .container{
+
+        grid-template-areas: 
+        
+        'navbar navbar navbar navbar'
+        'section section section section'
+        'aside aside aside aside'
+        'footer footer footer footer';
+    
+        }
+    
+    
+    }
+
+  
+  @media only screen and (min-width:300px) and (max-width:500px) {
+    
+    .container{
+
+        grid-template-areas: 
+        
+        'navbar navbar navbar navbar'
+        'section section section section'
+        'aside aside aside aside'
+        'footer footer footer footer';
+    
+        }
+    
+  }
+  @media only screen and (min-width:500px) and (max-width:800px) {
+    
+    .container{
+
+        grid-template-areas: 
+        
+        'navbar navbar navbar navbar'
+        'section section section section'
+        'aside aside aside aside'
+        'footer footer footer footer';
+    
+        }
+    
+      
+  }
+  @media only screen and (min-width:800px) {
+
+    .container{
+
+        grid-template-areas: 
+        
+        'navbar navbar navbar navbar'
+        'section section section section'
+        'aside aside aside aside'
+        'footer footer footer footer';
+    
+        }
+    
+       
+    
+  }
